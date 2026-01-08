@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leaderboard & Rules</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(180deg, #9b59b6, #8e44ad);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 95%;
+            max-width: 1200px;
+            display: flex;
+            gap: 20px;
+            padding: 20px 0;
+            align-items: stretch;
+        }
+
+        .card {
+            background: #111;
+            color: #fff;
+            border-radius: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 25px 30px;
+            height: 720px;
+        }
+
+        .title {
+            font-size: 30px;
+            font-weight: 700;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            justify-content: center;
+        }
+
+        .leaderboard {
+            text-align: center;
+            padding: 5px 0;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .rank {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .name {
+            font-size: 20px;
+            opacity: 0.9;
+        }
+
+        .rules-content {
+            padding: 15px;
+            font-size: 14px;
+            line-height: 1.3;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .rules-text {
+            text-align: center;
+            margin: 5px 0;
+        }
+
+        .rules-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+
+        .divider {
+            height: 1px;
+            background: rgba(255,255,255,0.15);
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="title">Leaderboard 🏆</div>
+            <div class="leaderboard">
+                <div><div class="rank">1st</div><div class="name">Shahmir</div></div>
+                <div><div class="rank">2nd</div><div class="name">Asad</div></div>
+                <div><div class="rank">3rd</div><div class="name">Isa</div></div>
+                <div><div class="rank">4th</div><div class="name">Simra</div></div>
+                <div><div class="rank">5th</div><div class="name">Eisa</div></div>
+                <div><div class="rank">6th</div><div class="name">Hamza</div></div>
+                <div><div class="rank">7th</div><div class="name">Raaef</div></div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="title">Rules 📝</div>
+            <div class="rules-content">
+                <div class="rules-text">
+                    To move up the leaderboard, you must verse the person above you or on the same rank.
+                    You must play 9 rounds:
+                </div>
+
+                <ul class="rules-list">
+                    <li>3 Rivals</li>
+                    <li>3 MVSD</li>
+                    <li>3 Bedwars</li>
+                </ul>
+
+                <div class="divider"></div>
+
+                <div class="rules-text">
+                    In Rivals, you may use <strong>ANY weapon</strong>. Weapon restrictions only apply
+                    if <strong>both players agree</strong> not to use certain weapons.
+                    <br><br>
+                    Autofire users must turn aim assist completely off.
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="rules-text">
+                    In MVSD, no abilities unless both players agree.
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="rules-text">
+                    In Bedwars, no kit unless both players agree.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
